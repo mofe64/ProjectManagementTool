@@ -1,0 +1,20 @@
+.tab {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 4rem;
+  transition: all ease-in 0.2s;
+}
+.tab:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 254, 254, 255) 0%,
+    rgba(255, 254, 254, 255) 20%,
+    rgba(254, 220, 202, 255) 100%
+  );
+  color: #fd752f;
+  border-right: 3px solid #fd752f;
+}
+.tab:hover p {
+  transform: scale(1.1);
+}

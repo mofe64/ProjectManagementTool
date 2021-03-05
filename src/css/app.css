@@ -1,0 +1,6 @@
+.page-container {
+  padding: 2rem;
+  display: flex;
+  height: 100vh;
+  background-color: #e8e6e1;
+}
