@@ -1,9 +1,9 @@
-import DashHeader from '../components/dashHeader'
+import Header from '../components/header'
 import DashBody from '../components/dashBody'
 const Dashboard = () => 
     <div className='flex flex-col'>
-        <DashHeader/>
-        <DashBody></DashBody>
+        <Header/>
+        <DashBody/>
     </div>
     
 

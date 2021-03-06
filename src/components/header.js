@@ -1,6 +1,6 @@
 import { faBell, faSearch } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-const DashHeader = () =>
+const Header = () =>
     <div className='flex justify-between bg-white p-5 rounded-lg'>
         <div className='text-gray-500'>
             <FontAwesomeIcon icon={faSearch} className='relative left-7'/>
@@ -12,4 +12,4 @@ const DashHeader = () =>
         </div>
     </div>
 
-export default DashHeader;
+export default Header;

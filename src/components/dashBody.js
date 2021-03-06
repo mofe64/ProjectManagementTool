@@ -23,7 +23,12 @@ const tabCollection = {
             projectDesc: 'Mobile Health Insurance Powered by Artificial Intelligence.',
             tags: ['Mobile', 'Web', 'InsureTech'],
             progress:'IN PROGRESS',
-            tasks: []
+            tasks: [
+                'Have you completed the refactoring ??',
+                'Have you completed the refactoring ??',
+                'Have you completed the refactoring ??',
+                
+            ]
         }
     ],
     messages: [

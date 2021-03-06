@@ -1,4 +1,7 @@
+import Header from '../components/header'
 const Projects = () => 
-    <h1>[Projects]</h1>
+    <div className='flex flex-col'>
+        <Header/>
+    </div>
 
 export default Projects;
