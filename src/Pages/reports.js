@@ -1,4 +1,8 @@
+import Header from '../components/header';
 const Reports = () => 
-    <h1>[Reports]</h1>
+    <div>
+        <Header/>
+        <h1>[Reports]</h1>
+    </div>
 
 export default Reports;

@@ -1,0 +1,8 @@
+.row div {
+  margin-left: 2rem;
+}
+tbody td {
+  border: 1px solid #e5e7eb;
+  border-collapse: collapse;
+  height: 100%;
+}
