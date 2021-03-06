@@ -16,11 +16,39 @@ const tasks = [
         status: 'PENDING'
     },
     {
-        name: 'build components',
+        name: 'Analyze Data',
+        tags: ['React', 'Web'],
+        project: 'Pentax',
+        due: '27/03/2021',
+        status: 'IN PROGRESS'
+    },
+    {
+        name: 'Refactor nubari codebase',
         tags: ['React', 'Ui/Ux', 'Web'],
         project: 'Pentax',
         due: '27/03/2021',
-        status: 'PENDING'
+        status: 'IN PROGRESS'
+    },
+    {
+        name: 'Test functions',
+        tags: ['Jest', 'JUnit', 'Web'],
+        project: 'Pentax',
+        due: '27/03/2021',
+        status: 'IN PROGRESS'
+    },
+    {
+        name: 'Build First Components',
+        tags: ['React', 'Ui/Ux', 'Web'],
+        project: 'INSURE TECH',
+        due: '27/03/2021',
+        status: 'IN REVIEW'
+    },
+    {
+        name: 'SOME STUFF',
+        tags: ['React', 'Java', 'SpringBoot'],
+        project: 'INSURE TECH',
+        due: '27/03/2021',
+        status: 'IN REVIEW'
     }
 
 ]

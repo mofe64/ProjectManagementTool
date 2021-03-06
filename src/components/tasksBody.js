@@ -53,7 +53,84 @@ const TaskBody = ({ tasks = [] }) =>
                                     {task.due}
                                 </td>
                             </tr>
-                        )}
+                    )}
+                    <tr>
+                        <button className='text-black pt-3 pb-3 pl-4 pr-4 rounded-xl text-xl'>
+                            <FontAwesomeIcon icon={faPlus} />
+                        </button>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div className='mt-5'>
+            <table className='table-fixed bg-white w-full'>
+                <thead>
+                    <tr>
+                        <th className=' flex justify-start pl-4 border-r-2 pt-2 pb-2'>
+                            <h1>IN PROGRESS</h1>
+                        </th>
+                        <th className='w-2/6'></th>
+                        <th className='w-1/6'></th>
+                        <th className='w-1/6'> </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {tasks.filter(task => task.status === 'IN PROGRESS')
+                        .map((task, i) =>
+                            <tr key={i} className='pt-2 pb-2'>
+                                <td className=' pl-4 pt-2 pb-2'>{task.name}</td> 
+                                <td className='flex row pt-2 pb-2'>
+                                    {task.tags.map((tag, i) =>
+                                        <Tag key={i} tagname={ tag} />
+                                    )}
+                                </td>
+                                <td className='pl-4 pt-2 pb2'>
+                                    {task.project}
+                                </td>
+                                <td className='pl-4 pt-2 pb2'>
+                                    {task.due}
+                                </td>
+                            </tr>
+                    )}
+                    <tr>
+                        <button className='text-black pt-3 pb-3 pl-4 pr-4 rounded-xl text-xl'>
+                            <FontAwesomeIcon icon={faPlus} />
+                        </button>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div className='mt-5'>
+            <table className='table-fixed bg-white w-full'>
+                <thead>
+                    <tr>
+                        <th className=' flex justify-start pl-4 border-r-2 pt-2 pb-2'>
+                            <h1>REVIEWS</h1>
+                        </th>
+                        <th className='w-2/6'></th>
+                        <th className='w-1/6'></th>
+                        <th className='w-1/6'> </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {tasks.filter(task => task.status === 'IN REVIEW')
+                        .map((task, i) =>
+                            <tr key={i} className='pt-2 pb-2'>
+                                <td className=' pl-4 pt-2 pb-2'>{task.name}</td> 
+                                <td className='flex row pt-2 pb-2'>
+                                    {task.tags.map((tag, i) =>
+                                        <Tag key={i} tagname={ tag} />
+                                    )}
+                                </td>
+                                <td className='pl-4 pt-2 pb2'>
+                                    {task.project}
+                                </td>
+                                <td className='pl-4 pt-2 pb2'>
+                                    {task.due}
+                                </td>
+                            </tr>
+                    )}
                 </tbody>
             </table>
         </div>
