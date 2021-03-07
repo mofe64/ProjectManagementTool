@@ -1,10 +1,10 @@
 import Header from '../components/header';
-import NewForm from '../components/newForm';
+import NewProjectFormContainer from '../containers/newProjectFormContainer';
 
 const NewProject = () => 
     <div className='flex flex-col'>
         <Header />
-        <NewForm/>
+        <NewProjectFormContainer/>
     </div>
 
 export default NewProject;

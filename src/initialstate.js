@@ -17,7 +17,6 @@ export const initialState = {
             projectDesc: 'A Fully Automated Digital Bank.',
             tags: ['Mobile', 'Fintech', 'Java', 'Android', 'IOS'],
             progress:'IN PROGRESS',
-            tasks: []
         },
     ],
     tasks: [

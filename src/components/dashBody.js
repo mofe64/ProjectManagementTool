@@ -4,6 +4,7 @@ import TaskCard from './taskCard';
 
 const DashBody = ({ projects=[], messages=[], tasks=[] }) => 
     <div className='flex flex-wrap'>
+        {console.log(` project length is ${projects.length}`)}
         {projects.map((project, i) => 
             <ProjectCard key={i} project={ project}/>
         )}

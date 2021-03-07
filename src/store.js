@@ -4,7 +4,11 @@ import { projectsReducer } from './reducers/projectReducer';
 import {initialState} from './initialstate'
 const store = createStore(
     projectsReducer,
-    initialState
+    (localStorage['redux-store'])? JSON.parse(localStorage['redux-store']): initialState
 )
-store.subscribe(()=> console.log(`project count :${store.getState().projects.length}`))
+
+store.subscribe(() => {
+    localStorage['redux-store'] = JSON.stringify(store.getState())
+})
+store.subscribe(() => console.log(`project count :${store.getState().projects.length}`))
 export default store;
