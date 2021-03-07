@@ -21,18 +21,14 @@ const TaskCard = ({ tasks = [] }) =>
                             
                             {(!task.completed ?
                                 <div className='flex justify-between w-full'>
-                                    <p>{task.taskDesc}</p> 
+                                    <p>{task.name}</p> 
                                     <FontAwesomeIcon icon={faCheckCircle} />
                                 </div> :
                                 <div className='flex justify-between w-full'>
-                                    <p className='line-through'>{task.taskDesc}</p>
+                                    <p className='line-through'>{task.name}</p>
                                     <FontAwesomeIcon icon={faCheckCircle} className='bg-green-600 rounded-full'/>
                                 </div>
-                            )}
-                                
-                                
-                           
-                            
+                            )}   
                         </div>
                     )
             }

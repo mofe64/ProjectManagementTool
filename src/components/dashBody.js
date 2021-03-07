@@ -10,40 +10,16 @@ const tabCollection = {
             progress:'COMPLETED',
             tasks: []
         },
-        {
-            title: 'Bank Of Lagos',
-            projectDesc: 'A Fully Automated Digital Bank.',
-            tags: ['Mobile', 'Fintech', 'Java', 'Android', 'IOS'],
-            progress:'IN PROGRESS',
 
-            tasks: []
-        },
         {
             title: 'Nubari Insurance',
             projectDesc: 'Mobile Health Insurance Powered by Artificial Intelligence.',
             tags: ['Mobile', 'Web', 'InsureTech'],
             progress:'IN PROGRESS',
-            tasks: [
-                'Have you completed the refactoring ??',
-                'Have you completed the refactoring ??',
-                'Have you completed the refactoring ??',
-                
-            ]
         }
     ],
     messages: [
-            {
-                name: 'Eyimofe',
-                messageHeader: 'Have you completed the refactoring ??'
-            },
-            {
-                name: 'Onyi',
-                messageHeader: 'Just Made a pull request have you ...'
-            },
-            {
-                name: 'Oracle',
-                messageHeader: 'How far with the Uml diagram ?'
-            }
+           
     ],
     tasks: [
         {
@@ -66,13 +42,13 @@ const tabCollection = {
 
 }
 
-const DashBody = ({ dashboardView=tabCollection  }) => 
+const DashBody = ({ projects=[], messages=[], tasks=[] }) => 
     <div className='flex flex-wrap'>
-        {dashboardView.projects.map((project, i) => 
+        {projects.map((project, i) => 
             <ProjectCard key={i} project={ project}/>
         )}
-        <MessageCard messages={ tabCollection.messages}/>
-        <TaskCard tasks={tabCollection.tasks}/>
+        <MessageCard messages={ messages}/>
+        <TaskCard tasks={tasks}/>
     </div>
     
 

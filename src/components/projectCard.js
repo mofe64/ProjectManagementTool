@@ -28,7 +28,7 @@ const ProjectCard = ({project = {}}) =>
                 <Tag key={i} tagname={tagname}></Tag>
             )}
         </div>
-        <div className='mt-5'>
+        {/* <div className='mt-5'>
             <h1 className='text-2xl font-bold underline'>Latests Tasks </h1>
             <div>
                 {(project.tasks.length === 0 ?
@@ -38,7 +38,7 @@ const ProjectCard = ({project = {}}) =>
                     )
                 )}
             </div>
-        </div>
+        </div> */}
     </div>
 
 export default ProjectCard;
