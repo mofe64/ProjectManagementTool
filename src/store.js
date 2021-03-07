@@ -1,4 +1,5 @@
-import { createStore } from 'redux';
+// eslint-disable-next-line
+import { createStore, combineReducers } from 'redux';
 import { projectsReducer } from './reducers/projectReducer';
 import {initialState} from './initialstate'
 const store = createStore(

@@ -1,12 +1,15 @@
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ModProjectCard from '../components/modProjectCard';
-const ProjectBody = ({ projects = [] }) =>
-    <div className='flex flex-col'>
+import {withRouter} from 'react-router-dom'
+const ProjectBody = withRouter(({ history, projects = [] }) => (
+        <div className='flex flex-col'>
         <div className='flex justify-between mt-5 mb-5'>
             <div></div>
             <div>
-                <button className='bg-yellow-600 text-white pt-3 pb-3 pl-4 pr-4 rounded-xl'>
+                <button className='bg-yellow-600 text-white pt-3 pb-3 pl-4 pr-4 rounded-xl'
+                onClick={()=> {history.push('/newProject')}}
+                >
                     <FontAwesomeIcon icon={ faPlus}/>
                 </button>
             </div>
@@ -32,6 +35,7 @@ const ProjectBody = ({ projects = [] }) =>
             </div>
             
         </div>
-        
     </div>
+))
+
 export default ProjectBody;

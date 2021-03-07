@@ -17,7 +17,9 @@ export const projectsReducer = (state= {}, action) => {
         case ProjectConstants.UPDATE_PROJECT:
             return {
                 ...state,
+                
                 projects: state.projects.filter(project => project.id !== action.payload.id),
+                // eslint-disable-next-line
                 projects: [
                     ...state.projects,
                     action.payload.newProjectDetails
