@@ -1,5 +1,6 @@
-import {useRef} from 'react'
-const NewForm = ({onAddProject=f=>f}) => {
+import { useRef } from 'react';
+import { withRouter } from 'react-router-dom';
+const NewForm = withRouter(({history,onAddProject=f=>f}) => {
     const projectNameRef = useRef();
     const projectDescriptionRef = useRef();
     const projectTagsRef = useRef();
@@ -16,6 +17,7 @@ const NewForm = ({onAddProject=f=>f}) => {
             progress: "WORKING"
         }
         onAddProject(newProject)
+        history.push('/')
     }
    return( <div className='pl-5 pr-5 mt-10 bg-white flex flex-col'>
         <form className='w-1/2 ' onSubmit={submit}>
@@ -35,5 +37,5 @@ const NewForm = ({onAddProject=f=>f}) => {
              text-white font-bold outline-none border-none'>Create</button>
         </form>
     </div>)
-}
+})
 export default NewForm;

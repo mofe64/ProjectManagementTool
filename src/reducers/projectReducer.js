@@ -2,7 +2,6 @@ import {ProjectConstants} from '../actions/constants'
 export const projectsReducer = (state= {}, action) => {
     switch (action.type) {
         case ProjectConstants.ADD_PROJECT:  
-            console.log('reducing')
             return {
                 ...state,
                 projects: [

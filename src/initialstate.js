@@ -1,26 +1,26 @@
 export const initialState = {
     projects: [
-        {
-        title: 'Pentax Project 1',
-        projectDesc: 'Porfolio Project for all members of the Cohort.',
-        tags: ['React', 'Web', 'CSS', 'JavaScript', 'Ui/Ux'],
-        progress:'COMPLETED',
-        },
-        {
-        title: 'Nubari Insurance',
-        projectDesc: 'Mobile Health Insurance Powered by AI.',
-        tags: ['Mobile', 'Web', 'InsureTech'],
-        progress:'WORKING',
-        },
-        {
-            title: 'Bank Of Lagos',
-            projectDesc: 'A Fully Automated Digital Bank.',
-            tags: ['Mobile', 'Fintech', 'Java', 'Android', 'IOS'],
-            progress:'IN PROGRESS',
-        },
+        // {
+        // title: 'Pentax Project 1',
+        // projectDesc: 'Porfolio Project for all members of the Cohort.',
+        // tags: ['React', 'Web', 'CSS', 'JavaScript', 'Ui/Ux'],
+        // progress:'COMPLETED',
+        // },
+        // {
+        // title: 'Nubari Insurance',
+        // projectDesc: 'Mobile Health Insurance Powered by AI.',
+        // tags: ['Mobile', 'Web', 'InsureTech'],
+        // progress:'WORKING',
+        // },
+        // {
+        //     title: 'Bank Of Lagos',
+        //     projectDesc: 'A Fully Automated Digital Bank.',
+        //     tags: ['Mobile', 'Fintech', 'Java', 'Android', 'IOS'],
+        //     progress:'IN PROGRESS',
+        // },
     ],
     tasks: [
-    {
+    {  
         name: 'build components',
         tags: ['React', 'Ui/Ux', 'Web'],
         project: 'Pentax',
